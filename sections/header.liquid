@@ -84,7 +84,12 @@
         .announcement-bar {
           background-color: {{ section.settings.color_bg }};
         }
-
+        .announcement-bar__img{
+          width: {{ section.settings.announcement_img_width }}px;
+        }
+        .announcement-bar__img img{
+          width: 100%;
+        }
         .announcement-bar__link:hover {
           {% assign brightness = section.settings.color_bg | color_brightness %}
 
@@ -117,9 +122,9 @@
               <span class="announcement-bar__img">
                {%- assign img_url = section.settings.announcement_img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                      <img class="lazyload js"
-                          src="{{ section.settings.announcement_img| img_url: '200x30' }}"
+                          src="{{ section.settings.announcement_img| img_url: '200x50' }}"
                           data-src="{{ img_url }}"
-                          data-widths="[180, 360, 540]"
+                          data-widths="[100,150,200,250,300]"
                           data-aspectratio="{{ section.settings.announcement_img.aspect_ratio }}"
                           data-sizes="auto"
                           alt="">
@@ -478,7 +483,18 @@
       "id": "announcement_img",
       "label": "公告栏图片"
     },
-  
+ 	{
+
+      "type": "range",
+      "id": "announcement_img_width",
+      "min":50,
+      "max":180,
+      "step":2,
+      "default":50,
+      "unit":"px",
+      "label": "公告栏图片宽度",
+       "info":"图片建议长高易比例2：1"
+    },
  	{
       "type": "select",
       "id": "menu_open",

@@ -3860,7 +3860,7 @@ hr {
   font-weight: var(--font-weight-header); }
   @media only screen and (min-width: 750px) {
     .announcement-bar__message {
-      padding-left: 35px;
+      padding-left: 20px;
       padding-right: 35px; } }
 
 .announcement-bar__img{
