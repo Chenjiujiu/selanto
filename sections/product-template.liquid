@@ -150,10 +150,14 @@
     <div class="grid__item {{ product_description_width }}">
       <div class="product-single__meta">
 
-        <h1 class="product-single__title">{{ product.title }}</h1>
-<!-- Start Areviews product title Rating Code -->
-<div class='areviews_header_stars'></div> 
-<!-- End Areviews product title Rating Code -->
+        <h1 class="product-single__title">{{ product.title }}</h1>
+
+<!-- Start Areviews product title Rating Code -->
+
+<div class='areviews_header_stars'></div> 
+
+<!-- End Areviews product title Rating Code -->
+
 
 {% comment %}Start automatically added Judge.me widget{% endcomment %}
   {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
@@ -293,15 +297,13 @@
           data-base-url="{{ shop.url }}{{ routes.root_url }}"
         >
         </div>
-
-        <div class="product-single__description rte">
-          {% render 'product-description-tabs', product: product %}
-        </div>
-
-        {% if section.settings.show_share_buttons %}
-          {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
-        {% endif %}
     </div>
+    <div class="product-single__description rte">
+      {% render 'product-description-tabs', product: product %}
+    </div>
+    {% if section.settings.show_share_buttons %}
+      {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
+    {% endif %}
   
 {% comment %}Start automatically added Judge.me widget{% endcomment %}
   {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
