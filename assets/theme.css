@@ -4684,7 +4684,8 @@ hr {
   color: var(--color-sale-text); }
 
 .predictive-search-item__price--compare {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 .predictive-search-view-all, .predictive-search-loading {
   border-top: 1px solid var(--color-border); }
@@ -5355,7 +5356,10 @@ hr {
   color: var(--color-sale-text); }
 
 .price--on-sale .price-item--regular {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+  font-size: 0.8em;
+  font-weight: 400;
+}
 
 .price-unit-price {
   color: var(--color-body-text);
