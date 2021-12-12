@@ -71,6 +71,16 @@
    		 display: block; }
       }
     {% endif %}
+    .header-custom-text{
+      width: 35%;
+      overflow: hidden;
+      text-align: center;
+      color:{{ section.settings.header_custom_text_color }}
+    }
+    .header-custom-text p{
+      color:{{ section.settings.header_custom_text_color }}
+    }
+
 </style>
 
 
@@ -112,6 +122,7 @@
 				width: 100%;
             }
 		{%- endif -%}
+
       </style>
 	<div class="announcement-bar-box">
       <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement_bar_label' | t }}">
@@ -190,6 +201,9 @@
           </div>
         {% endif %}
       </div>
+    {%- if section.settings.header_custom_text != blank -%}
+      <div class="grid__item header-custom-text phone-hide">{{ section.settings.header_custom_text }}</div>
+    {%- endif -%}
     <form class="grid__item search-form search-bar__form phone-hide" action="{{ routes.search_url }}" method="get" role="search">
       <div class="search-form__input-wrapper">
         <input
@@ -521,26 +535,37 @@
  	{
       "type": "checkbox",
       "id": "announcement_button_hidden",
-		"default": true,
-      "label": "移动端隐藏按钮"
+		  "default": true,
+      "label": "移动端隐藏公告栏按钮"
     },
     {
       "type": "checkbox",
       "id": "show_social",
       "default": false,
-      "label": "分享图标"
+      "label": "导航栏分享图标"
     },
     {
       "type": "color",
       "id": "show_social_color",
       "default": "#ffffff",
-      "label": "分享图标颜色"
+      "label": "导航栏分享图标颜色"
     },
     {
       "type": "color",
       "id": "show_social_active",
       "default": "#0000ff",
       "label": "分享图标划过颜色"
+    },
+    {
+      "type":"richtext",
+      "id":"header_custom_text",
+      "label":"搜索前面的文字"
+    },
+    {
+      "type":"color",
+      "id":"header_custom_text_color",
+      "default": "#5c5c61",
+      "label":"搜索前面的文字颜色"
     },
     {
       "type": "color",
