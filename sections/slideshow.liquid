@@ -14,11 +14,75 @@
   {%- endif -%}
   {% assign wrapper_height = 100 | divided_by: min_aspect_ratio %}
 {%- endif -%}
+<style>
+  .slide_eye_box{
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    color:{{ section.settings.eye_color }};
+  }
+  .slide_eye_box svg{
+    width: 28px;
+    height: 28px;
+  }
+  .slide_eye_box:hover .slide_eye_pro{
+    display: flex;
+  }
+  .slide_eye_pro{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 99.5%;
+    top: 0;
+    background: #FFFFFF;
+    padding: 10px 5px;
+    transform: translateY(-40%);
+    box-shadow: 3px 2px 7px 1px rgba(0,0,0,.3);
+  }
+  .eye_pro_img{
+    width: 50%;
+  }
+  .eye_pro_info {
+    width: 50%;
+    overflow: hidden;
+  }
+  .eye_pro_title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+  }
+  .eye_pro_title:hover{
+   border-bottom: 1px solid var(--color-body-text);
+  }
+  .eye_pro_price {
+    margin: 0;
+    padding: 5px 0;
+  }
+  .slide_eye_pro .eye_pro_url{
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    background-color: var(--color-btn-primary);
+    color: var(--color-btn-primary-text);
+  }
+  .slide_eye_pro .eye_pro_url:hover{
+    color: var(--color-btn-primary-text);
+    background-color: var(--color-btn-primary-focus);
+  }
 
+
+</style>
 {%- assign text_alignments = section.settings.text_alignment | split: ' ' -%}
 {%- assign text_horizontal_alignment = text_alignments.first -%}
 {%- assign text_vertical_alignment = text_alignments.last | strip -%}
-
 <div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
   {%- if section.blocks.size > 0 -%}
     <div id="SlideshowWrapper-{{ section.id }}" class="slideshow-wrapper" role="region" aria-label="slideshow" aria-describedby="slideshow-info" tabindex="-1" data-slider>
@@ -105,7 +169,40 @@
                   {%- endif -%}
                 </div>
               </div>
+              {%- if block.settings.product!=blank -%}
+                <div class="slide_eye_box slide_eye_box_{{ block.id }} phone-hide">
+                  <svg t="1639329093760" viewBox="0 0 1024 1024"  p-id="1218" width="200" height="200"><path d="M512 192c156.448 0 296.021333 98.730667 418.410667 291.605333a52.938667 52.938667 0 0 1 0 56.789334C808.021333 733.269333 668.448 832 512 832c-156.448 0-296.021333-98.730667-418.410667-291.605333a52.938667 52.938667 0 0 1 0-56.789334C215.978667 290.730667 355.552 192 512 192z m0 128c-106.037333 0-192 85.962667-192 192s85.962667 192 192 192 192-85.962667 192-192-85.962667-192-192-192z m0 320c70.688 0 128-57.312 128-128s-57.312-128-128-128-128 57.312-128 128 57.312 128 128 128z" p-id="1219" fill="currentColor"></path></svg>
+                  <div class="slide_eye_pro">
+                    <div class="eye_pro_img">
+                      {%- assign preview_image = block.settings.product.featured_media.preview_image -%}
+                      {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img id="{{ img_id }}"
+                           class="grid-view-item__image lazyload"
+                           alt="{{ preview_image.alt }}"
+                           data-src="{{ img_url }}"
+                           data-widths="[180, 360, 540, 720]"
+                           data-aspectratio="{{ preview_image.aspect_ratio }}"
+                           data-sizes="auto"
+                           data-image>
+                    </div>
+                    <div class="eye_pro_info">
+                      <p class="eye_pro_title">{{ block.settings.product.title }}</p>
+                      <p class="eye_pro_price"> {% include 'product-price', variant: block.settings.product.first_available_variant, show_vendor: true %}</p>
+                      <a class="eye_pro_url" href="{{ block.settings.product.url }}">Show Now</a>
+                    </div>
+                  </div>
+                </div>
+                <style>
+                  .slide_eye_box_{{block.id}}{
+                    top: 57%;
+                    left: 29.5%;
+                    width: 6%;
+                    height: 26%;
+                  }
+                </style>
+              {%- endif -%}
             </div>
+
           </div>
         {%- endfor -%}
       </div>
@@ -227,6 +324,12 @@
   "class": "index-section index-section--flush index-section--slideshow",
   "max_blocks": 6,
   "settings": [
+    {
+      "type":"color",
+      "id":"eye_color",
+      "default":"#eb6f6f",
+      "label":"小眼睛颜色"
+    },
     {
       "type": "select",
       "id": "slideshow_height",
@@ -868,6 +971,11 @@
         "zh-TW": "圖片投影片"
       },
       "settings": [
+        {
+          "type":"product",
+          "id":"product",
+          "label":" 关联的产品"
+        },
         {
           "type": "image_picker",
           "id": "image",
