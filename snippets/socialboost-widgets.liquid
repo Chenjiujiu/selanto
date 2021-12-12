@@ -1,0 +1,9 @@
+{% if customer %}
+                                    {% assign customerId = customer.id %}
+                                    {% assign customerName = customer.name %}
+                                    {% assign customerFname = customer.first_name %}
+                                    {% assign customerLname = customer.last_name %}
+                                    {% assign customerEmail = customer.email %}
+                                {% endif %}
+                                <script>AMSBConfig = {user : {name : "{{ customerName }}", first_name : "{{ customerFname }}", last_name : "{{ customerLname }}", email : "{{ customerEmail }}", id : "{{ customerId }}", country : ""}, site : {id : "71025", domain : "selanto.myshopify.com", platform : "sb_shopify"}, version : "1533263480"};</script>
+                                

@@ -1,0 +1,1217 @@
+{
+  "current": {
+    "color_text": "#162950",
+    "color_body_text": "#6d6d6d",
+    "color_sale_text": "#da2f0c",
+    "color_button": "#eb6f6f",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#162950",
+    "color_text_field_text": "#6d6d6d",
+    "color_text_field_border": "#6d6d6d",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#6d6d6d",
+    "image_overlay_opacity": 5,
+    "color_borders": "#6d6d6d",
+    "color_body_bg": "#ffffff",
+    "type_header_font": "muli_n6",
+    "type_header_base_size": 22,
+    "type_base_font": "muli_n4",
+    "type_base_size": 17,
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": true,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/twitter.com\/SelantoStore",
+    "social_facebook_link": "https:\/\/www.facebook.com\/selantoproducts",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/gmselanto\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/selanto_products\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCFqNNvMBcqc0d9SSHNDfO_A",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/SELANTO_STORE_LOGO.png",
+    "currency_code_enabled": true,
+    "checkout_header_image": "shopify:\/\/shop_images\/000000000000_26edd7ff-f433-4ee3-926d-ebb798e8e0f0.jpg",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f4f8fa",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Playball",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1544a4",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "fixed": true,
+          "menu_open": "hover",
+          "announcement_button_t": "CLICK >",
+          "announcement_button_hidden": false,
+          "show_social": true,
+          "show_social_color": "#ffffff",
+          "show_social_active": "#1544a4",
+          "announcement_button_bg": "#ff0000",
+          "announcement_button_text": "#ffffff",
+          "logo_left": true,
+          "nav_bg": "#000000",
+          "nav_text": "#f4f8fa",
+          "nav_active_bg": "#5c5c61",
+          "nav_active_text": "#ffffff",
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/00000000.png",
+          "logo_max_width": 250,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": false,
+          "message_text": "BUY 2 SAVE 20% & MORE DEALS",
+          "message_link": "shopify:\/\/collections\/electric-room-heaters",
+          "color_bg": "#2a2c2c",
+          "color_text": "#ffffff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/1FSB.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "SHOP NOW",
+          "button_link": "shopify:\/\/collections\/electric-room-heaters"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "a02455a5-5f3e-4a2e-8bc1-e8435c00b128": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8888.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "LEARN MORE",
+              "button_link": "shopify:\/\/pages\/early-black-friday"
+            }
+          },
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/selanto999.jpg",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/collections\/electric-room-heaters"
+            }
+          },
+          "6f3eafd0-88b0-4705-8f79-031a410cd9a8": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/OOOOOO.jpg",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "LEARN MORE",
+              "button_link": "shopify:\/\/pages\/black-friday-sale"
+            }
+          },
+          "1492095993817": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/room_space_heater_419fad9b-fc2d-4e75-b5e3-60b6401ce9be.png",
+              "alignment": "center top",
+              "slide_title": "SPRING-LIKE WARMTH",
+              "subheading": "THAT'S SELANTO.",
+              "button_label": "BROWSE OUR CATEGORIES",
+              "button_link": "shopify:\/\/collections\/electric-room-heaters"
+            }
+          },
+          "a322d00e-8d31-41a8-b437-b47585274cf6": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/selanto_household_appliances_2c677628-602a-4055-9a00-b421045a97fb.jpg",
+              "alignment": "right center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "cc05d44e-2b0a-4fb3-bc4f-e098fdb6c2e2": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "alignment": "right bottom",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "a02455a5-5f3e-4a2e-8bc1-e8435c00b128",
+          "slideshow-0",
+          "6f3eafd0-88b0-4705-8f79-031a410cd9a8",
+          "1492095993817",
+          "a322d00e-8d31-41a8-b437-b47585274cf6",
+          "cc05d44e-2b0a-4fb3-bc4f-e098fdb6c2e2"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "left center",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 5
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "settings": {
+          "title": "TRENDING PRODUCTS",
+          "collection": "electric-portable-space-heaters",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 3,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "1492033877875": {
+        "type": "quotes",
+        "blocks": {
+          "226f5bdf-a93a-46da-9754-70d4724c73f2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>💓💓<strong>Great value\/ works well<\/strong><br\/>I use this at work in a small office and my wife has used it in her large office. It works great. The safety feature is very sensitive so any movement at all and it will shut off. Heats up quick and warms my space pleasantly.<\/p>",
+              "author": "Jeremy"
+            }
+          },
+          "ec674be9-4d60-45c2-9a05-ffaa5bd4fbfc": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Highly recomended! Very impressed!<\/strong><br\/>When it arrived and I saw how small it was....I thought perhaps I should've bought a different one or two of these?! But that little heater CRANKS out the heat!! Works great and case stays cool to touch.😊✨Quiet 2 speed operation. <\/p>",
+              "author": "Theresa Searle"
+            }
+          },
+          "0a9db419-e65d-4d06-b1f2-90cca0350f04": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Life saver for your small bedrooms!  <\/strong>Will order two more for the cold months ahead. It's light and easy to handle as well, which is really convenient. All in all, it was a good purchase. I no longer star in frozen part 3 here at my office :D <\/p>",
+              "author": "Mercae"
+            }
+          },
+          "8c980818-90bb-4b80-ba2b-5df6a7334de7": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Love! Great for the price..heats well <\/strong>For such a small heater this puts out a lot of heat and the noise level is low. Easy to set anywhere it is needed. Small but MIGHTY! Heat is heat. Worked well over the winter with daily use averaging about 12 hrs. Very happy with it.😊😊<\/p>",
+              "author": "J. Kay"
+            }
+          },
+          "aa9c8555-410b-4b8f-86a3-4779cbb5ec7a": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>As advertised! Small Great heater!           <\/strong>🔥<strong>       <\/strong>I literally bought this yesterday, had it shipped to me yesterday and plugged it in this morning in my classroom. Heat is heat. But being that I live in the South where it is 75 one day and 35 the next, and it has been a little chilly in my room.😍🔥🔥🔥🔥 I will definitely not have to worry about that anymore!<\/p>",
+              "author": "Schmookaloo"
+            }
+          }
+        },
+        "block_order": [
+          "226f5bdf-a93a-46da-9754-70d4724c73f2",
+          "ec674be9-4d60-45c2-9a05-ffaa5bd4fbfc",
+          "0a9db419-e65d-4d06-b1f2-90cca0350f04",
+          "8c980818-90bb-4b80-ba2b-5df6a7334de7",
+          "aa9c8555-410b-4b8f-86a3-4779cbb5ec7a"
+        ],
+        "settings": {
+          "title": "SHOW RECENT ORDERS - REVIEWS"
+        }
+      },
+      "1492033924902": {
+        "type": "custom-content",
+        "blocks": {
+          "1492033924902-0": {
+            "type": "text",
+            "settings": {
+              "title": "Looking for an Inexpensive Way to Heat up a Room or Space？",
+              "text": "<p>Selanto's<a href=\"\/collections\/electric-portable-space-heaters\" title=\"Electric Portable Space Heaters\"> portable heaters<\/a> are useful for heat supply and cold resistance. <\/p><p>Is your boss too cheap to turn up the thermostat to keep the office comfortable and toasty? You got me! It can be placed anywhere under the desk or near your feet, making it the ideal size for a working environment.  Limited storage space in you home or apartment? In spite of their modest dimensions, these mini compact appliances deliver efficient heat in a jiffy. Looking forward to bring you spring-like warmth. Maintains individual room temperature to provide heat only in places you need. It’s perfect for houses that have kids and pets.<\/p>",
+              "width": "100%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1492033924902-0"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1492096252560": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "1492096252560-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1492096252560-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1492096252560-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1492096252560-0",
+          "1492096252560-1",
+          "1492096252560-2"
+        ],
+        "settings": {
+          "title": "Collection list",
+          "grid": 3
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "blog_show_author": false,
+          "blog_show_date": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "2f7a512c-1743-4d57-a98a-388e966129b3": {
+            "type": "text_ico",
+            "settings": {
+              "title": "Contact Info",
+              "icon_time": "9:00 AM-5:30 PM GMT+8 WKDY",
+              "icon_phone": "86 13376883674",
+              "icon_email": "contact@selantousa.com",
+              "icon_address": "No. 2, Weiyi Road, Xindong Village, Longshan Town, Cixi City"
+            }
+          },
+          "link_list": {
+            "type": "link_list",
+            "settings": {
+              "title": "Support",
+              "menu": "footer"
+            }
+          },
+          "0bfe765a-1378-4b00-b162-42809dda74d8": {
+            "type": "link_list",
+            "settings": {
+              "title": "About",
+              "menu": "about"
+            }
+          },
+          "newsletter": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "2f7a512c-1743-4d57-a98a-388e966129b3",
+          "link_list",
+          "0bfe765a-1378-4b00-b162-42809dda74d8",
+          "newsletter"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#000000",
+          "color_footer_text": "#f4f8fa",
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "163290182326244b3d": {
+        "type": "featured-blog",
+        "disabled": true,
+        "settings": {
+          "title": "Blog posts",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": true
+        }
+      },
+      "16329024745a948bb0": {
+        "type": "custom-content",
+        "disabled": true,
+        "blocks": {
+          "16329024745a948bb0-0": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "text": "<p><br\/><a href=\"\/pages\/about-us\" target=\"_blank\" title=\"About us\">SELANTO<\/a>™,an Internet start-up, which all depends on your trust and love! We're not just a start-up, we're a responsible team, and we're becoming a more advanced team, a cooler team, like a bunch of hopeful Internet brand stores, like a little bull.  <br\/>Selanto isn’t about products, it’s about passions and the people driven by them. Therefore, we have always set high standards for ourselves in terms of processes, core values, products, services, aesthetics and concepts...<br\/><br\/><\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "16329024745a948bb0-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/julie.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "16329024745a948bb0-0",
+          "16329024745a948bb0-1"
+        ],
+        "settings": {
+          "title": "THE SELANTO BRAND"
+        }
+      },
+      "1632902488e407500a": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "1632902488e407500a-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2_35c94907-a2f7-42e3-9476-81188e40f579.jpg",
+              "alignment": "top",
+              "link": "shopify:\/\/products\/selanto-44-tower-fans-with-remote-control",
+              "cta_label": "Keep cool check out our 44'' Tower Fans"
+            }
+          },
+          "1632902488e407500a-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2_999fa18d-868c-4f6f-8e06-bd2d0f0664f6.jpg",
+              "alignment": "top",
+              "link": "shopify:\/\/products\/selanto-36-tower-fan-with-remote-control",
+              "cta_label": "Keep cool check out our 36'' Tower Fans"
+            }
+          },
+          "1632902488e407500a-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/23333335.jpg",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/tower-fans",
+              "cta_label": "Fresh-air feeling view our fans collection"
+            }
+          }
+        },
+        "block_order": [
+          "1632902488e407500a-1",
+          "1632902488e407500a-0",
+          "1632902488e407500a-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1632902538e3a30b24": {
+        "type": "custom-content",
+        "disabled": true,
+        "blocks": {
+          "1632902538e3a30b24-0": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "Talk about your brand",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "1632902538e3a30b24-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "width": "50%",
+              "alignment": "bottom-right"
+            }
+          }
+        },
+        "block_order": [
+          "1632902538e3a30b24-0",
+          "1632902538e3a30b24-1"
+        ],
+        "settings": {
+          "title": "Custom content"
+        }
+      },
+      "16329025612ab60373": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/SELANTO_Designed_for_cozy_crafted_for_warmth..png",
+          "layout": "right",
+          "title": "SELANTO EMBRACES WARMTH",
+          "text": "<p>SELANTO® specializes in fans, heaters, the household comfort goods that are reimagined for modern life. We make products that effortlessly transition from day to night. Designed for cozy, crafted for warmth.<\/p><p><a href=\"https:\/\/www.instagram.com\/selanto_products\/\" title=\"https:\/\/www.instagram.com\/selanto_products\/\">#Live with Selanto<\/a><em>  <\/em>Your Home and Office Reflects Personality. Improve your life quality and add personal touches. Each Selanto piece is thoughtfully created to be the perfect balance of form and function.  <\/p>",
+          "button_label": "VIEW MORE",
+          "button_link": "shopify:\/\/pages\/about-us"
+        }
+      },
+      "1632902704373ccc1c": {
+        "type": "video",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/1212.png",
+          "image_position": "center center",
+          "video_link": "https:\/\/youtu.be\/B2t5YlMSzls",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "small",
+          "video_title": "",
+          "text_size": "medium"
+        }
+      },
+      "1633392880d2f30d04": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/pinecones-on-blue.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "title": "THE SELANTO BRAND",
+          "text": "<p><a href=\"\/pages\/about-us\" target=\"_blank\" title=\"About us\">SELANTO<\/a>, an Internet start-up, which all depends on your trust and love! We're not just a start-up, we're a responsible team, and we're becoming a more advanced team, a cooler team, like a bunch of hopeful Internet Therefore, we have always set high standards for ourselves in terms of processes, core values, products, services, aesthetics and concepts...<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "1637053550bd916568": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/8c15d41b9b829464843b5aa4449a28f3.jpg",
+          "layout": "left",
+          "title": "PROUDLY SUSTAINABLE",
+          "text": "<p>Our planet is our runway. So, let's start acting like it. We’ve been pursuing a comfortable and energy-saving lifestyle that offers efficient ways to heat your home.<\/p><p>All of our packaging are recyclable and made from post-consumer recycled materials. By turning to sustainable practices and materials, we're doing our part in keeping the world as pretty as can be.  <\/p><p><\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1637053565012b3f90": {
+        "type": "logo-bar",
+        "disabled": true,
+        "blocks": {
+          "1637053565012b3f90-0": {
+            "type": "logo_image",
+            "settings": {
+              "link": ""
+            }
+          },
+          "1637053565012b3f90-1": {
+            "type": "logo_image",
+            "settings": {
+              "link": ""
+            }
+          },
+          "1637053565012b3f90-2": {
+            "type": "logo_image",
+            "settings": {
+              "link": ""
+            }
+          },
+          "1637053565012b3f90-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GUARANTEE.png",
+              "link": ""
+            }
+          },
+          "d15d5243-a6b3-442b-a071-ad75f8d17d51": {
+            "type": "logo_image",
+            "disabled": true,
+            "settings": {
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1637053565012b3f90-0",
+          "1637053565012b3f90-1",
+          "1637053565012b3f90-2",
+          "1637053565012b3f90-3",
+          "d15d5243-a6b3-442b-a071-ad75f8d17d51"
+        ],
+        "settings": {
+          "title": "4 great reasons TO BUY FROM US"
+        }
+      },
+      "16370725442d1fc95c": {
+        "type": "newsletter",
+        "disabled": true,
+        "settings": {
+          "section_title": "Subscribe to our newsletter",
+          "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "show_background": true
+        }
+      },
+      "16371148705515edab": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/4_reasons_to_tell_you_why_you_choose_selanto.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "medium",
+          "title": "",
+          "text": "<p>  <\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1637122961d4048d1f": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/best_choice_high_quality_one_year_waranty.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "section_title": "Hurry up!  UNLOCK REWARDS💸⁠",
+          "subheading": "<p>Are you ready? Be the first to earn Selanto free space heaters!<\/p>",
+          "show_background": false
+        }
+      },
+      "sadhus-text": {
+        "type": "sadhus-text",
+        "settings": {
+          "paragraph": "",
+          "align": "left"
+        }
+      },
+      "163728790223ceb47d": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "163728790223ceb47d-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "tower-fans"
+            }
+          },
+          "163728790223ceb47d-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "electric-ceramic-tower-heaters"
+            }
+          },
+          "163728790223ceb47d-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "electric-room-heaters"
+            }
+          }
+        },
+        "block_order": [
+          "163728790223ceb47d-1",
+          "163728790223ceb47d-0",
+          "163728790223ceb47d-2"
+        ],
+        "settings": {
+          "title": "Collection list",
+          "grid": 3
+        }
+      },
+      "16372882298dc8beac": {
+        "type": "slideshow",
+        "blocks": {
+          "16372882298dc8beac-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/597d08444fc3b08676bda80fce798a1.jpg",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "16372882298dc8beac-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SELANTO_TOWER_FAN_COLLECTION.jpg",
+              "alignment": "center center",
+              "slide_title": "Soothing, cool, and peaceful.",
+              "subheading": "Take a gentle nap with the quiet breeze in the scorching summer.",
+              "button_label": "SEE THE BREEZE FAN",
+              "button_link": "shopify:\/\/collections\/tower-fans"
+            }
+          }
+        },
+        "block_order": [
+          "16372882298dc8beac-1",
+          "16372882298dc8beac-0"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "1639104491c7f82cdd": {
+        "type": "collection",
+        "settings": {
+          "title": "NEW ARRIVALS!",
+          "collection": "11",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "16391159756d4008a5": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "featured_product": "500w-electric-small-heater",
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      }
+    },
+    "content_for_index": [
+      "hero",
+      "slideshow",
+      "featured-collections",
+      "1639104491c7f82cdd",
+      "1632902704373ccc1c",
+      "1492033924902",
+      "16371148705515edab",
+      "16329025612ab60373",
+      "1633392880d2f30d04",
+      "16372882298dc8beac",
+      "163290182326244b3d",
+      "1492033877875",
+      "1637122961d4048d1f",
+      "1492096252560",
+      "1637053550bd916568",
+      "16329024745a948bb0",
+      "1637053565012b3f90",
+      "1632902538e3a30b24",
+      "1632902488e407500a",
+      "16370725442d1fc95c",
+      "163728790223ceb47d",
+      "16391159756d4008a5"
+    ],
+    "blocks": {
+      "5918445685253060206": {
+        "type": "shopify:\/\/apps\/bundler-product-bundles\/blocks\/bundler-script-append\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}
