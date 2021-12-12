@@ -6492,7 +6492,11 @@ hr {
 
 .product-card__title {
   border-bottom: 1px solid transparent;
-  display: inline;
+  display: block;
+  padding: 4px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-family: var(--font-stack-header);
   font-style: var(--font-style-header);
   font-weight: var(--font-weight-header); }
