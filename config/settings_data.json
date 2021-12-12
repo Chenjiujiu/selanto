@@ -53,12 +53,15 @@
         "type": "header",
         "settings": {
           "fixed": true,
+          "announcement_img_width": 50,
           "menu_open": "hover",
           "announcement_button_t": "CLICK >",
           "announcement_button_hidden": false,
           "show_social": true,
           "show_social_color": "#ffffff",
           "show_social_active": "#1544a4",
+          "header_custom_text": "",
+          "header_custom_text_color": "#5c5c61",
           "announcement_button_bg": "#ff0000",
           "announcement_button_text": "#ffffff",
           "logo_left": true,
@@ -100,6 +103,7 @@
             "type": "image",
             "disabled": true,
             "settings": {
+              "product": "",
               "image": "shopify:\/\/shop_images\/8888.png",
               "alignment": "center center",
               "slide_title": "",
@@ -111,6 +115,7 @@
           "slideshow-0": {
             "type": "image",
             "settings": {
+              "product": "portable-electric-space-heaters-black",
               "image": "shopify:\/\/shop_images\/selanto999.jpg",
               "alignment": "center center",
               "slide_title": "",
@@ -123,6 +128,7 @@
             "type": "image",
             "disabled": true,
             "settings": {
+              "product": "",
               "image": "shopify:\/\/shop_images\/OOOOOO.jpg",
               "alignment": "center center",
               "slide_title": "",
@@ -135,6 +141,7 @@
             "type": "image",
             "disabled": true,
             "settings": {
+              "product": "",
               "image": "shopify:\/\/shop_images\/room_space_heater_419fad9b-fc2d-4e75-b5e3-60b6401ce9be.png",
               "alignment": "center top",
               "slide_title": "SPRING-LIKE WARMTH",
@@ -147,6 +154,7 @@
             "type": "image",
             "disabled": true,
             "settings": {
+              "product": "",
               "image": "shopify:\/\/shop_images\/selanto_household_appliances_2c677628-602a-4055-9a00-b421045a97fb.jpg",
               "alignment": "right center",
               "slide_title": "",
@@ -159,6 +167,7 @@
             "type": "image",
             "disabled": true,
             "settings": {
+              "product": "",
               "alignment": "right bottom",
               "slide_title": "",
               "subheading": "",
@@ -176,6 +185,7 @@
           "cc05d44e-2b0a-4fb3-bc4f-e098fdb6c2e2"
         ],
         "settings": {
+          "eye_color": "#eb6f6f",
           "slideshow_height": "adapt",
           "text_size": "medium",
           "text_alignment": "left center",
@@ -717,6 +727,7 @@
             "type": "image",
             "disabled": true,
             "settings": {
+              "product": "",
               "image": "shopify:\/\/shop_images\/597d08444fc3b08676bda80fce798a1.jpg",
               "alignment": "center center",
               "slide_title": "",
@@ -728,6 +739,7 @@
           "16372882298dc8beac-0": {
             "type": "image",
             "settings": {
+              "product": "",
               "image": "shopify:\/\/shop_images\/SELANTO_TOWER_FAN_COLLECTION.jpg",
               "alignment": "center center",
               "slide_title": "Soothing, cool, and peaceful.",
@@ -742,6 +754,7 @@
           "16372882298dc8beac-0"
         ],
         "settings": {
+          "eye_color": "#eb6f6f",
           "slideshow_height": "adapt",
           "text_size": "medium",
           "text_alignment": "center center",
