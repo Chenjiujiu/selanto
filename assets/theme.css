@@ -1403,7 +1403,7 @@ ol {
       list-style: square outside; }
 
 .rte a:not(.btn) {
-  border-bottom: 1px solid currentColor;
+  /*border-bottom: 1px solid currentColor;*/
   padding-bottom: 1px; }
 
 .text-center.rte ul,
@@ -7164,4 +7164,7 @@ width: 100%;
   background: none;
   pointer-events: none;
   overflow: visible;
+}
+.a-unline{
+  border-bottom: none;
 }
