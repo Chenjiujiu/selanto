@@ -53,6 +53,7 @@
         "type": "header",
         "settings": {
           "fixed": true,
+          "announcement_img": "shopify:\/\/shop_images\/d53dbccbfe92e9149a0d4c187e2306fb.png",
           "announcement_img_width": 50,
           "menu_open": "click",
           "announcement_button_t": "CLICK >",
@@ -61,7 +62,7 @@
           "show_social_color": "#ffffff",
           "show_social_active": "#1544a4",
           "header_custom_text": "<p><\/p><p><strong>Durable, functional and portable space<\/strong> <strong>heaters & fans        <\/strong><\/p><p><strong>Contact Details: contact@selantousa.com <\/strong><\/p><p><\/p>",
-          "header_custom_text_color": "#5c5c61",
+          "header_custom_text_color": "#6d6d6d",
           "announcement_button_bg": "#ff0000",
           "announcement_button_text": "#ffffff",
           "logo_left": true,
@@ -75,7 +76,7 @@
           "main_linklist": "main-menu",
           "message": true,
           "home_page_only": false,
-          "message_text": "BUY 2 SAVE 20% & MORE DEALS",
+          "message_text": "FREE  SHIPPING ON ALL ORDERS",
           "message_link": "shopify:\/\/collections\/electric-room-heaters",
           "color_bg": "#2a2c2c",
           "color_text": "#ffffff"
@@ -119,8 +120,8 @@
               "image": "shopify:\/\/shop_images\/selanto999.jpg",
               "alignment": "center center",
               "slide_title": "",
-              "subheading": "UP TO 50% OFF",
-              "button_label": "SHOP NOW",
+              "subheading": "",
+              "button_label": "SUPPER SALE",
               "button_link": "shopify:\/\/collections\/electric-room-heaters"
             }
           },
