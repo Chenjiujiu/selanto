@@ -63,6 +63,7 @@
           "show_social_active": "#1544a4",
           "header_custom_text": "<p><\/p><p><strong>Durable, functional and portable space<\/strong> <strong>heaters & fans        <\/strong><\/p><p><strong>Contact Details: contact@selantousa.com <\/strong><\/p><p><\/p>",
           "header_custom_text_color": "#6d6d6d",
+          "header_custom_text_padding": 13,
           "announcement_button_bg": "#ff0000",
           "announcement_button_text": "#ffffff",
           "logo_left": true,
