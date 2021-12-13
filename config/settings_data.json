@@ -54,13 +54,13 @@
         "settings": {
           "fixed": true,
           "announcement_img_width": 50,
-          "menu_open": "hover",
+          "menu_open": "click",
           "announcement_button_t": "CLICK >",
           "announcement_button_hidden": false,
           "show_social": true,
           "show_social_color": "#ffffff",
           "show_social_active": "#1544a4",
-          "header_custom_text": "",
+          "header_custom_text": "<p><\/p><p><strong>Durable, functional and portable space<\/strong> <strong>heaters & fans        <\/strong><\/p><p><strong>Contact Details: contact@selantousa.com <\/strong><\/p><p><\/p>",
           "header_custom_text_color": "#5c5c61",
           "announcement_button_bg": "#ff0000",
           "announcement_button_text": "#ffffff",
@@ -119,7 +119,7 @@
               "image": "shopify:\/\/shop_images\/selanto999.jpg",
               "alignment": "center center",
               "slide_title": "",
-              "subheading": "",
+              "subheading": "UP TO 50% OFF",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/electric-room-heaters"
             }
