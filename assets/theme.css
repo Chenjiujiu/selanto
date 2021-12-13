@@ -7076,6 +7076,10 @@ hr {
 .site-header__social-icons .social-icons__item{
   padding: 0 5px;
 }
+.announcement-bar-box{
+  position: relative;
+  z-index: 999;
+}
 .announcement-bar__message{
 	margin:0;
 }
@@ -7110,6 +7114,15 @@ white-space: nowrap;
 @media screen and (min-width: 751px) {
   .desk-hide {
     display: none !important;
+  }
+  #shopify-section-header{
+    position: relative;
+  }
+  #SearchDrawer{
+    height: 205px;
+    position: absolute;
+    bottom: 0;
+    max-height: 60px;
   }
 }
 

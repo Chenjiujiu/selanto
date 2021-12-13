@@ -75,10 +75,13 @@
       width: 35%;
       overflow: hidden;
       text-align: center;
-      color:{{ section.settings.header_custom_text_color }}
+      color:{{ section.settings.header_custom_text_color }};
     }
     .header-custom-text p{
-      color:{{ section.settings.header_custom_text_color }}
+      color:{{ section.settings.header_custom_text_color }};
+    }
+    .site-header .header-custom-text{
+      padding-left: {{ section.settings.header_custom_text_padding }}% ;
     }
 
 </style>
@@ -204,33 +207,6 @@
     {%- if section.settings.header_custom_text != blank -%}
       <div class="grid__item header-custom-text phone-hide">{{ section.settings.header_custom_text }}</div>
     {%- endif -%}
-    <form class="grid__item search-form search-bar__form phone-hide" action="{{ routes.search_url }}" method="get" role="search">
-      <div class="search-form__input-wrapper">
-        <input
-          type="text"
-          name="q"
-          placeholder="{{ 'general.search.placeholder' | t }}"
-          role="combobox"
-          aria-autocomplete="list"
-          aria-owns="predictive-search-results"
-          aria-expanded="false"
-          aria-label="{{ 'general.search.placeholder' | t }}"
-          aria-haspopup="listbox"
-          class="search-form__input search-bar__input"
-          data-predictive-search-drawer-input
-          data-base-url="{{ routes.search_url }}"
-        />
-        <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
-        <div class="predictive-search-wrapper predictive-search-wrapper--drawer" data-predictive-search-mount="drawer"></div>
-      </div>
-
-      <button class="search-bar__submit search-form__submit"
-              type="submit"
-              data-search-form-submit>
-        {% include 'icon-search' %}
-        <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
-      </button>
-    </form>
       {% if section.settings.align_logo == 'left' %}
         <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
           {% include 'site-nav', linklist: section.settings.main_linklist %}
@@ -240,7 +216,7 @@
       <div class="grid__item {% if section.settings.align_logo == 'left' %}medium-up--one-quarter{% else %}medium-up--one-third {% endif %} text-right site-header__icons{% if shop.customer_accounts_enabled %} site-header__icons--plus{% endif %}">
         <div class="site-header__icons-wrapper">
 
-          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top desk-hide" data-predictive-search-open-drawer>
+          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
             {% include 'icon-search' %}
             <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
           </button>
@@ -566,6 +542,16 @@
       "id":"header_custom_text_color",
       "default": "#5c5c61",
       "label":"搜索前面的文字颜色"
+    },
+    {
+      "type":"range",
+      "id":"header_custom_text_padding",
+      "min":1,
+      "max":50,
+      "step":1,
+      "unit":"%",
+      "default": 1,
+      "label":"文字左边间距"
     },
     {
       "type": "color",
