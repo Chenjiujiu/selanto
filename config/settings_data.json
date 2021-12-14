@@ -818,7 +818,7 @@
     "blocks": {
       "5918445685253060206": {
         "type": "shopify:\/\/apps\/bundler-product-bundles\/blocks\/bundler-script-append\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }
