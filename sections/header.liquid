@@ -409,14 +409,20 @@
 }
 </script>
 <script>
-     setTimeout(()=>{    
-    	let height=document.querySelector(".announcement-bar__message").offsetHeight;
-   	 	document.querySelector(".announcement-bar-box").style.height=height+"px";
-    	document.querySelector(".announcement-bar").style.height=height+"px";
-      
-    	let height2=document.querySelector(".header-box").offsetHeight;
-    	document.querySelector(".sadhus-header").style.height=height2+"px";
-  	},750)
+  ~function () {
+    function setheight() {
+      let height=document.querySelector(".announcement-bar__message").offsetHeight;
+      document.querySelector(".announcement-bar-box").style.height=height+"px";
+      document.querySelector(".announcement-bar").style.height=height+"px";
+
+      let height2=document.querySelector(".header-box").offsetHeight;
+      document.querySelector(".sadhus-header").style.height=height2+"px";
+    }
+    setheight();
+    let dom=document.querySelector('.header-box')
+    const observer=new MutationObserver(setheight);
+    observer.observe(dom,{childList:true,attributes:true})
+  }()
 </script>
 
 {% if request.page_type == 'index' %}
