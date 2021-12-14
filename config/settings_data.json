@@ -55,7 +55,7 @@
           "fixed": true,
           "announcement_img": "shopify:\/\/shop_images\/d53dbccbfe92e9149a0d4c187e2306fb.png",
           "announcement_img_width": 50,
-          "menu_open": "hover",
+          "menu_open": "click",
           "announcement_button_t": "CLICK >",
           "announcement_button_hidden": false,
           "show_social": true,
