@@ -53,7 +53,6 @@
         "type": "header",
         "settings": {
           "fixed": true,
-          "announcement_img": "shopify:\/\/shop_images\/d53dbccbfe92e9149a0d4c187e2306fb.png",
           "announcement_img_width": 50,
           "menu_open": "hover",
           "announcement_button_t": "CLICK >",
