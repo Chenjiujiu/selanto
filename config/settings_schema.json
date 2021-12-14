@@ -8,6 +8,17 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "首页雪花",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "showFlake",
+        "label": "下雪",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": {
       "cs": "Barvy",
       "da": "Farver",
