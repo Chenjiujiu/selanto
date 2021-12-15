@@ -7185,3 +7185,68 @@ width: 100%;
 .a-unline{
   border-bottom: none;
 }
+.d-flex {
+  display: flex;
+}
+.d-ib{
+  display: inline-block;
+}
+.d-noe{
+  display: none;
+}
+.flex2 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.cursor-p{
+  cursor: pointer;
+}
+.flex3 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.flex4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.flex5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.ov-hidden{
+  overflow: hidden;
+}
+.ctr-dot .dot-box{
+  padding: 0 10px;
+}
+.ctr-dot .dot{
+
+}
+.ctr-dot .dot-box .dot-black{
+  display: none;
+}
+
+.ctr-dot .active .dot-white{
+  display: none;
+}
+.ctr-dot .active .dot-black{
+  display: inline-block;
+}
+.transition-product{
+  transition: transform 1s ease;
+}
+.position-a{
+  position: absolute;
+}
+.position-r{
+  position: relative;
+}
+.top-right{
+  top: 0;
+  right: 55px;
+}
+.fw-bold{
+  font-weight: bold;
+}

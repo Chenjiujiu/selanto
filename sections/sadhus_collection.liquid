@@ -1,0 +1,143 @@
+<div class="page-width position-r">
+	{% if section.settings.title != blank %}
+		<div class="section-header text-center">
+			<h2>{{ section.settings.title | escape }}</h2>
+		</div>
+	{% endif %}
+
+	{%- assign collection = collections[section.settings.collection] -%}
+
+	{% case section.settings.grid %}
+	{% when 2 %}
+	{%- assign max_height = 530 -%}
+	{%- assign grid_item_width = 'flex2' -%}
+	{% when 3 %}
+	{%- assign max_height = 345 -%}
+	{%- assign grid_item_width = 'flex3' -%}
+	{% when 4 %}
+	{%- assign max_height = 250 -%}
+	{%- assign grid_item_width = 'flex4' -%}
+	{% when 5 %}
+	{%- assign max_height = 195 -%}
+	{%- assign grid_item_width = 'flex5' -%}
+	{% endcase %}
+
+	{%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
+	<div class="ov-hidden">
+		<ul class="grid--uniform d-flex product-box transition-product">
+			{% for product in collection.products limit: product_limit %}
+				<li class="{{ grid_item_width }} ">
+					{% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+				</li>
+			{% else %}
+
+				{% for i in (1..product_limit) %}
+					<li class="{{ grid_item_width }} ">
+						<div class="grid-view-item product-card">
+							<a class="grid-view-item__link grid-view-item__image-container full-width-link" href="#">
+								<span class="visually-hidden">{{ 'homepage.onboarding.product_title' | t }}</span>
+							</a>
+							<div class="grid-view-item__image-wrapper">
+								{% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+								{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+							</div>
+							<div class="h4 grid-view-item__title"
+									 aria-hidden="true">{{ 'homepage.onboarding.product_title' | t }}</div>
+							{% include 'product-price' %}
+						</div>
+					</li>
+				{% endfor %}
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="ctr-dot">
+		<ul class="text-center" >
+			{%- for i in (1..section.settings.rows) -%}
+				<li class="d-ib cursor-p dot-box {% if forloop.first  %}active{% endif %} " >
+					<svg t="1639583310530" class="icon dot dot-white " viewBox="0 0 1024 1024"  p-id="4744" width="200" height="200"><path d="M512 66c-246 0-446 200-446 446 0 246 200 446 446 446s446-200 446-446c0-246-200-446-446-446z m0 828.03712c-211 0-382-171.392-382-382 0-211 171-382 382-382 211 0 382 171 382 382 0 211-171 382-382 382z" p-id="4745"></path></svg>
+					<svg t="1639584057658" class="icon dot dot-black" viewBox="0 0 1024 1024" p-id="4876" width="200" height="200"><path d="M512 66c-246 0-446 200-446 446 0 246 200 446 446 446s446-200 446-446c0-246-200-446-446-446z" p-id="4877"></path></svg>
+				</li>
+			{%- endfor -%}
+		</ul>
+
+	</div>
+	{% if section.settings.show_view_all %}
+		<div class="text-center top-right position-a fw-bold">
+			<a href="{{ collection.url }}" class=""
+				 aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+				{{ 'collections.general.view_all' | t }}<svg t="1639586740305" class="icon" viewBox="0 0 1024 1024" p-id="3133" width="200" height="200"><path d="M431 491L256 666 316 725l235-235L316 256 256 316l175 175z m256 0L512 666l60 60 235-235L576 256 512 316l175 175z" fill="currentColor" p-id="3134"></path></svg>
+			</a>
+		</div>
+	{% endif %}
+
+</div>
+<script>
+	~function () {
+		let dotArr= Array.from(document.querySelectorAll('#shopify-section-{{ section.id }} .ctr-dot .dot-box'));
+		let productBox= document.querySelector('#shopify-section-{{ section.id }} .product-box');
+		dotArr.forEach((item,index)=>{
+			item.onclick=()=>{
+				dotArr.forEach(obj=>{obj.classList.remove("active")});
+				item.classList.add('active')
+				productBox.style.transform="translateX(-"+(index*100)+"%)"
+			}
+		})
+	}()
+</script>
+
+{% schema %}
+{
+	"name": "产品系列-苦行僧",
+	"class": "index-section",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "标题",
+			"default": "产品系列"
+		},
+		{
+			"id": "collection",
+			"type": "collection",
+			"label": "产品"
+		},
+		{
+			"type": "range",
+			"id": "grid",
+			"label": "每行产品数",
+			"min": 2,
+			"max": 5,
+			"step": 1,
+			"default": 3
+		},
+		{
+			"type": "range",
+			"id": "rows",
+			"label": "页数",
+			"min": 1,
+			"max": 5,
+			"step": 1,
+			"default": 2
+		},
+		{
+			"type": "checkbox",
+			"id": "show_vendor",
+			"label": "显示产品厂商",
+			"default": false
+		},
+		{
+			"type": "checkbox",
+			"id": "show_view_all",
+			"label": "显示“查看全部”按钮",
+			"default": false
+		}
+	],
+	"presets": [
+		{
+			"name": "产品系列-苦行僧",
+			"category": "products"
+		}
+	]
+}
+{% endschema %}
