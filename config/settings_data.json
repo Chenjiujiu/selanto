@@ -283,6 +283,7 @@
       },
       "1492033924902": {
         "type": "custom-content",
+        "disabled": true,
         "blocks": {
           "1492033924902-0": {
             "type": "text",
