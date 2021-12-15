@@ -419,6 +419,9 @@
       document.querySelector(".sadhus-header").style.height=height2+"px";
     }
     setheight();
+    setTimeout(()=>{
+       setheight();
+    },750)
     let dom=document.querySelector('.header-box')
     const observer=new MutationObserver(setheight);
     observer.observe(dom,{childList:true,attributes:true})
