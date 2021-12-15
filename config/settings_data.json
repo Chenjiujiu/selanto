@@ -501,13 +501,12 @@
       },
       "1632902538e3a30b24": {
         "type": "custom-content",
-        "disabled": true,
         "blocks": {
           "1632902538e3a30b24-0": {
             "type": "text",
             "settings": {
               "title": "1500W Compact Room Heater -Top-Rated Portable Space Heater",
-              "text": "<p>Our <strong>Speed Pioneer Heat™ <\/strong>Series FH131 PTC electric heater heat up any space, operate quietly, and be extremely safe. This unit within 3s covers an entire 260 sqft room, increasing the temperature around you to 70°F. Invented with ceramic heating system and rated power up to 1500 watts. Be safe and cozy with Selanto Heater! Its size is small designed for office room desk indoor use. Use it any time of the day.<\/p>",
+              "text": "<p>Our <strong>Speed Pioneer Heat™ <\/strong>Series FH131 PTC electric heater heat up any space, operate quietly, and be extremely safe. This unit within 3s covers an entire 260 sqft room, increasing the temperature around you to 70°F. Invented with ceramic heating system and rated power up to 1500 watts. Its size is small designed for office room desk indoor use. Use it any time of the day.<\/p>",
               "width": "50%",
               "alignment": "center",
               "align_text": "center"
