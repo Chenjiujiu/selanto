@@ -433,7 +433,6 @@
         "blocks": {
           "16329024745a948bb0-0": {
             "type": "text",
-            "disabled": true,
             "settings": {
               "title": "",
               "text": "<p><br\/><a href=\"\/pages\/about-us\" target=\"_blank\" title=\"About us\">SELANTO<\/a>™,an Internet start-up, which all depends on your trust and love! We're not just a start-up, we're a responsible team, and we're becoming a more advanced team, a cooler team, like a bunch of hopeful Internet brand stores, like a little bull.  <br\/>Selanto isn’t about products, it’s about passions and the people driven by them. Therefore, we have always set high standards for ourselves in terms of processes, core values, products, services, aesthetics and concepts...<br\/><br\/><\/p>",
@@ -508,7 +507,7 @@
             "type": "text",
             "settings": {
               "title": "1500W Compact Room Heater - Top-Rated Portable Space Heater",
-              "text": "<p>Our <strong>Speed Pioneer Heat™<\/strong>Series FH131 PTC space heater heat up any space, operatequietly, and be extremely safe. This unit within 3s covers an entire 260 sqft room, increasing the temperature around you to 70°F. Invented with ceramic heating system and rated power up to 1500 watts. Be safe and cozy with Selanto Heater! Its size is small designed for office room desk indoor use. Use it any time of the day. <\/p>",
+              "text": "<p>Our <strong>Speed Pioneer Heat™ <\/strong>Series FH131 PTC space heater heat up any space, operate quietly, and be extremely safe. This unit within 3s covers an entire 260 sqft room, increasing the temperature around you to 70°F. Invented with ceramic heating system and rated power up to 1500 watts. Be safe and cozy with Selanto Heater! Its size is small designed for office room desk indoor use. Use it any time of the day.<\/p>",
               "width": "50%",
               "alignment": "center",
               "align_text": "center"
@@ -796,6 +795,7 @@
       "featured-collections",
       "1639104491c7f82cdd",
       "1632902704373ccc1c",
+      "1632902538e3a30b24",
       "1492033924902",
       "16371148705515edab",
       "16329025612ab60373",
@@ -808,7 +808,6 @@
       "1637053550bd916568",
       "16329024745a948bb0",
       "1637053565012b3f90",
-      "1632902538e3a30b24",
       "1632902488e407500a",
       "16370725442d1fc95c",
       "163728790223ceb47d",
