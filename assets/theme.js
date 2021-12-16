@@ -9685,7 +9685,7 @@ function removeImageLoadingAnimation(image) {
     imageWrapper.removeAttribute('data-image-loading-animation');
   }
 }
-!function (){
+~function (){
   let gotop=document.querySelector('#gotop');
   function throttle(method,delay){
     var timer=null;
@@ -9723,4 +9723,145 @@ function removeImageLoadingAnimation(image) {
      }
     },10);
   }
+}()
+
+~function (){
+  class sadhusSlide{
+    constructor(box) {
+      this.box=box;
+      this.current=0;
+      this.itemBox=this.box.querySelector('.item-box');
+      this.itemArr=this.box.querySelectorAll('.item');
+      this.dotArr=this.box.querySelectorAll('.ctr-dot');
+      this.max=this.dotArr.length-1;
+      this.nextButton=this.box.querySelector('.next')||'';
+      this.prevButton=this.box.querySelector('.prev')||'';
+      this.date=new Date().getTime();
+      this.init();
+    }
+    init(){
+      this.bind();
+    }
+    bind(){
+      if(this.nextButton){
+        this.nextButton.addEventListener('click',(e)=>{
+          if(!this.nextButton.dataset.disable){
+           let now=new Date().getTime();
+            if((now-this.date)>500){
+              this.next();
+              this.date=now;
+            }else{
+              return false;
+            }
+          }
+        })
+      }
+      if (this.prevButton){
+        this.prevButton.addEventListener('click',(e)=>{
+          if(!this.prevButton.dataset.disable){
+            let now=new Date().getTime();
+            if((now-this.date)>500){
+              this.prev();
+              this.date=now;
+            }else{
+              return false;
+            }
+
+          }
+        })
+      }
+      if(this.dotArr){
+        this.dotArr.forEach((item,index)=>{
+          item.onclick=()=>{
+            this.current=index;
+            this.update()
+          }
+        })
+      }
+      let startX;
+      let endX;
+      let that=this;
+      this.box.addEventListener('touchstart', function (e) {
+        startX = e.changedTouches[0].pageX;
+        endX=startX;
+      })
+      this.box.addEventListener('touchmove', function (e) {
+        endX = e.changedTouches[0].pageX;
+      })
+      this.box.addEventListener('touchend', function (e) {
+        if(endX-startX>50){
+          that.prev();
+        }
+        if(endX-startX<-50){
+          that.next();
+        }
+      })
+    }
+    next(){
+      if(this.current>=this.max){
+        return false
+      }else{
+        this.current++;
+        this.update();
+      }
+    }
+    prev(){
+      if(this.current<=0){
+        return false;
+      }else{
+        this.current--;
+        this.update();
+      }
+    }
+    setItem(num){
+      this.itemBox.style.transform="translateX(-"+(num*100)+"%)"
+    }
+    setDot(num){
+      if(this.dotArr) {
+        this.dotArr.forEach(obj => {
+          obj.classList.remove("active")
+        });
+        this.dotArr[num].classList.add('active');
+      }
+    }
+    setEnable(){
+      if(this.prevButton){
+        if(this.current<=0){
+          this.prevButton.dataset.disable='1'
+          this.prevButton.classList.add('disable');
+        }else{
+          this.prevButton.dataset.disable=''
+          this.prevButton.classList.remove('disable');
+        }
+      }
+      if(this.nextButton){
+        if(this.current>=this.max){
+          this.nextButton.dataset.disable='1'
+          this.nextButton.classList.add('disable');
+        }else{
+          this.nextButton.dataset.disable=''
+          this.nextButton.classList.remove('disable');
+        }
+      }
+    }
+    debounce(func, delay) {
+      console.log(111)
+      var timeout = null;
+      return function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(()=>{
+          func.apply(this, arguments);
+        }, delay);
+      };
+    }
+    update(){
+      this.setItem(this.current)
+      this.setDot(this.current)
+      this.setEnable()
+    }
+  }
+  let slideArr=document.querySelectorAll('.sadhus-slide');
+  slideArr.forEach(item=>{
+    new sadhusSlide(item);
+  })
 }()

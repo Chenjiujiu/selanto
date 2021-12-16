@@ -7218,20 +7218,18 @@ width: 100%;
 .ov-hidden{
   overflow: hidden;
 }
-.ctr-dot .dot-box{
+.ctr-box .ctr-dot{
   padding: 0 10px;
 }
-.ctr-dot .dot{
 
-}
-.ctr-dot .dot-box .dot-black{
+.ctr-box .dot-black{
   display: none;
 }
 
-.ctr-dot .active .dot-white{
+.ctr-box .active .dot-white{
   display: none;
 }
-.ctr-dot .active .dot-black{
+.ctr-box .active .dot-black{
   display: inline-block;
 }
 .transition-product{
@@ -7249,4 +7247,13 @@ width: 100%;
 }
 .fw-bold{
   font-weight: bold;
+}
+.rotat90{
+  transform: rotate(90deg) ;
+}
+.rotat-90{
+  transform: rotate(-90deg) ;
+}
+.d-ib{
+  display: inline-block;
 }

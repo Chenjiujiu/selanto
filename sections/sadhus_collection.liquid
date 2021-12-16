@@ -1,4 +1,25 @@
-<div class="page-width position-r">
+<style>
+		.ctr-button span{
+        padding: 0 20px 4px;
+        background: rgba(150,150,150,0.1);
+				cursor: pointer;
+		}
+		.ctr-button span:hover{
+        background: rgba(150,150,150,0.3);
+		}
+
+	.ctr-button .next{
+			position: absolute;
+      top: 48%;
+			right: 0;
+	}
+	.ctr-button .prev{
+			position: absolute;
+      top: 48%;
+			left: 0;
+	}
+</style>
+<div class="page-width position-r sadhus-slide">
 	{% if section.settings.title != blank %}
 		<div class="section-header text-center">
 			<h2>{{ section.settings.title | escape }}</h2>
@@ -24,9 +45,9 @@
 
 	{%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
 	<div class="ov-hidden">
-		<ul class="grid--uniform d-flex product-box transition-product">
+		<ul class="grid--uniform d-flex product-box transition-product item-box">
 			{% for product in collection.products limit: product_limit %}
-				<li class="{{ grid_item_width }} ">
+				<li class="{{ grid_item_width }} item">
 					{% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
 				</li>
 			{% else %}
@@ -51,16 +72,24 @@
 		</ul>
 	</div>
 
-	<div class="ctr-dot">
+	<div class="ctr-box" >
 		<ul class="text-center" >
 			{%- for i in (1..section.settings.rows) -%}
-				<li class="d-ib cursor-p dot-box {% if forloop.first  %}active{% endif %} " >
+				<li class="d-ib cursor-p ctr-dot {% if forloop.first  %}active{% endif %} " >
 					<svg t="1639583310530" class="icon dot dot-white " viewBox="0 0 1024 1024"  p-id="4744" width="200" height="200"><path d="M512 66c-246 0-446 200-446 446 0 246 200 446 446 446s446-200 446-446c0-246-200-446-446-446z m0 828.03712c-211 0-382-171.392-382-382 0-211 171-382 382-382 211 0 382 171 382 382 0 211-171 382-382 382z" p-id="4745"></path></svg>
 					<svg t="1639584057658" class="icon dot dot-black" viewBox="0 0 1024 1024" p-id="4876" width="200" height="200"><path d="M512 66c-246 0-446 200-446 446 0 246 200 446 446 446s446-200 446-446c0-246-200-446-446-446z" p-id="4877"></path></svg>
 				</li>
 			{%- endfor -%}
 		</ul>
 
+	</div>
+	<div class="ctr-button phone-hide">
+		<span class=" prev rotat-90 d-ib">
+<svg t="1639675006856" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2485" width="200" height="200"><path d="M910.222222 796.444444c-17.066667 0-34.133333-5.688889-45.511111-17.066666L551.822222 409.6c-11.377778-5.688889-17.066667-11.377778-34.133333-11.377778-5.688889 0-22.755556 5.688889-28.444445 11.377778l-329.955555 364.088889c-22.755556 22.755556-56.888889 22.755556-79.644445 5.688889-22.755556-22.755556-22.755556-56.888889-5.688888-79.644445l329.955555-364.088889c28.444444-34.133333 73.955556-51.2 119.466667-51.2s85.333333 22.755556 119.466666 56.888889l312.888889 364.088889c22.755556 22.755556 17.066667 56.888889-5.688889 79.644445-11.377778 5.688889-28.444444 11.377778-39.822222 11.377777z" p-id="2486"></path></svg>
+		</span>
+		<span class=" next rotat90 d-ib ">
+	<svg t="1639675006856" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2485" width="200" height="200"><path d="M910.222222 796.444444c-17.066667 0-34.133333-5.688889-45.511111-17.066666L551.822222 409.6c-11.377778-5.688889-17.066667-11.377778-34.133333-11.377778-5.688889 0-22.755556 5.688889-28.444445 11.377778l-329.955555 364.088889c-22.755556 22.755556-56.888889 22.755556-79.644445 5.688889-22.755556-22.755556-22.755556-56.888889-5.688888-79.644445l329.955555-364.088889c28.444444-34.133333 73.955556-51.2 119.466667-51.2s85.333333 22.755556 119.466666 56.888889l312.888889 364.088889c22.755556 22.755556 17.066667 56.888889-5.688889 79.644445-11.377778 5.688889-28.444444 11.377778-39.822222 11.377777z" p-id="2486"></path></svg>
+		</span>
 	</div>
 	{% if section.settings.show_view_all %}
 		<div class="text-center top-right position-a fw-bold">
@@ -72,19 +101,7 @@
 	{% endif %}
 
 </div>
-<script>
-	~function () {
-		let dotArr= Array.from(document.querySelectorAll('#shopify-section-{{ section.id }} .ctr-dot .dot-box'));
-		let productBox= document.querySelector('#shopify-section-{{ section.id }} .product-box');
-		dotArr.forEach((item,index)=>{
-			item.onclick=()=>{
-				dotArr.forEach(obj=>{obj.classList.remove("active")});
-				item.classList.add('active')
-				productBox.style.transform="translateX(-"+(index*100)+"%)"
-			}
-		})
-	}()
-</script>
+
 
 {% schema %}
 {
