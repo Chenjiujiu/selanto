@@ -776,9 +776,8 @@
       },
       "16391159756d4008a5": {
         "type": "featured-product",
-        "disabled": true,
         "settings": {
-          "featured_product": "500w-electric-small-heater",
+          "featured_product": "digital-space-heaters-with-timer",
           "show_quantity_selector": true,
           "show_vendor": false,
           "enable_payment_button": true,
@@ -800,18 +799,18 @@
       "16371148705515edab",
       "16329025612ab60373",
       "1633392880d2f30d04",
-      "16372882298dc8beac",
       "163290182326244b3d",
       "1492033877875",
       "1637122961d4048d1f",
+      "16391159756d4008a5",
+      "16372882298dc8beac",
       "1492096252560",
       "1637053550bd916568",
       "16329024745a948bb0",
       "1637053565012b3f90",
       "1632902488e407500a",
       "16370725442d1fc95c",
-      "163728790223ceb47d",
-      "16391159756d4008a5"
+      "163728790223ceb47d"
     ],
     "blocks": {
       "5918445685253060206": {
