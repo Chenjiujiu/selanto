@@ -765,7 +765,6 @@
       },
       "1639104491c7f82cdd": {
         "type": "collection",
-        "disabled": true,
         "settings": {
           "title": "NEW ARRIVALS!",
           "collection": "11",
@@ -802,6 +801,7 @@
       },
       "1639707263117feed0": {
         "type": "sadhus_collection",
+        "disabled": true,
         "settings": {
           "title": "NEW ARRIVALS!",
           "collection": "11",
