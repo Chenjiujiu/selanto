@@ -797,7 +797,7 @@
           "grid": 3,
           "rows": 2,
           "show_vendor": false,
-          "show_view_all": false
+          "show_view_all": true
         }
       },
       "1639707263117feed0": {
