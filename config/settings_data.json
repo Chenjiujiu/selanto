@@ -198,6 +198,7 @@
       },
       "featured-collections": {
         "type": "collection",
+        "disabled": true,
         "settings": {
           "title": "TRENDING PRODUCTS",
           "collection": "electric-portable-space-heaters",
@@ -501,7 +502,6 @@
       },
       "1632902538e3a30b24": {
         "type": "custom-content",
-        "disabled": true,
         "blocks": {
           "1632902538e3a30b24-0": {
             "type": "text",
@@ -765,6 +765,7 @@
       },
       "1639104491c7f82cdd": {
         "type": "collection",
+        "disabled": true,
         "settings": {
           "title": "NEW ARRIVALS!",
           "collection": "11",
@@ -787,12 +788,36 @@
           "enable_image_zoom": true,
           "enable_video_looping": false
         }
+      },
+      "1639707090e4e3e4ce": {
+        "type": "sadhus_collection",
+        "settings": {
+          "title": "TRENDING PRODUCTS",
+          "collection": "electric-portable-space-heaters",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "1639707263117feed0": {
+        "type": "sadhus_collection",
+        "settings": {
+          "title": "NEW ARRIVALS!",
+          "collection": "11",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": true
+        }
       }
     },
     "content_for_index": [
       "hero",
       "slideshow",
       "featured-collections",
+      "1639707090e4e3e4ce",
+      "1639707263117feed0",
       "1639104491c7f82cdd",
       "1632902704373ccc1c",
       "1632902538e3a30b24",
