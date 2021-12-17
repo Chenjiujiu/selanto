@@ -794,7 +794,7 @@
         "settings": {
           "title": "TRENDING PRODUCTS",
           "collection": "electric-portable-space-heaters",
-          "grid": 3,
+          "grid": 4,
           "rows": 2,
           "show_vendor": false,
           "show_view_all": true
