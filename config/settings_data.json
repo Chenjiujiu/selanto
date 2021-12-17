@@ -776,6 +776,7 @@
       },
       "16391159756d4008a5": {
         "type": "featured-product",
+        "disabled": true,
         "settings": {
           "featured_product": "500w-electric-small-heater",
           "show_quantity_selector": true,
@@ -799,9 +800,9 @@
       "16371148705515edab",
       "16329025612ab60373",
       "1633392880d2f30d04",
+      "1637122961d4048d1f",
       "163290182326244b3d",
       "1492033877875",
-      "1637122961d4048d1f",
       "16391159756d4008a5",
       "16372882298dc8beac",
       "1492096252560",
