@@ -92,6 +92,10 @@
                 {% include 'icon-chevron-left' %}
                 <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
               </button>
+              <button type="button" class="btn btn--link sadhus-prev sadhus_disable phone-hide thumbnails-slider__btn thumbnails-slider__prev " >
+                {% include 'icon-chevron-left' %}
+                <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
+              </button>
             {% endif %}
 
             <ul class="product-single__thumbnails product-single__thumbnails-{{ section.id }}" data-slider-container>
@@ -138,6 +142,10 @@
             </ul>
             {% if enable_thumbnail_slides == true %}
               <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}" data-slider-button data-slider-button-next>
+                {% include 'icon-chevron-right' %}
+                <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
+              </button>
+              <button type="button" class="btn btn--link sadhus-next phone-hide thumbnails-slider__btn thumbnails-slider__next ">
                 {% include 'icon-chevron-right' %}
                 <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
               </button>
@@ -320,6 +328,40 @@
   </script>
 {% endunless %}
 
+ <script>
+   ~function () {
+     let nextBtn=document.querySelector(".sadhus-next");
+     let prevBtn=document.querySelector(".sadhus-prev");
+     let box=document.querySelector(".product-single__thumbnails-slider-track");
+     let max=document.querySelectorAll(".product-single__thumbnails-slider-track li").length-4;
+     let current=0;
+     nextBtn.onclick=function () {
+       current++;
+       if(current>max){
+         current=max;
+         return false;
+       }else if(current===max){
+         nextBtn.classList.add('sadhus_disable');
+       }
+       prevBtn.classList.remove('sadhus_disable');
+       move();
+     }
+     prevBtn.onclick=function () {
+       current--;
+       if(current<0){
+         current=0;
+         return false;
+       }else if(current===0){
+         prevBtn.classList.add('sadhus_disable');
+       }
+       nextBtn.classList.remove('sadhus_disable');
+       move();
+     }
+     function move() {
+       box.style.transform="translateX(-"+(current*25)+"%)"
+     }
+   }()
+ </script>
 
 
 {% schema %}
