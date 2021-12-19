@@ -2295,6 +2295,12 @@ hr {
   .custom__item .grid-view-item {
     margin-bottom: 0; }
 
+@media screen and (max-width: 750px) {
+  .grid-view-item {
+    margin: 0 auto 10px;
+  }
+}
+
 .grid-view-item__title {
   margin-bottom: 0;
   color: var(--color-text); }
@@ -3856,10 +3862,11 @@ hr {
 .announcement-bar__message {
   display: inline-block;
   padding: 11px 22px;
-  font-size: calc(((16) / (var(--font-size-base))) * 1em);
+  font-size: calc(((14) / (var(--font-size-base))) * 1em);
   font-weight: var(--font-weight-header); }
   @media only screen and (min-width: 750px) {
     .announcement-bar__message {
+      font-size: calc(((16) / (var(--font-size-base))) * 1em);
       padding-left: 20px;
       padding-right: 35px; } }
 
@@ -7215,6 +7222,27 @@ width: 100%;
   flex: 0 0 20%;
   max-width: 20%;
 }
+
+@media screen and (max-width: 750px) {
+  .flex2_ph {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .flex3_ph {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .flex4_ph {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .flex5_ph {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
 .ov-hidden{
   overflow: hidden;
 }
@@ -7256,4 +7284,7 @@ width: 100%;
 }
 .d-ib{
   display: inline-block;
+}
+body{
+  overflow-x: hidden;
 }

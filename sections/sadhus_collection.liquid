@@ -18,10 +18,20 @@
       top: 48%;
 			left: 0;
 	}
+	@media screen and (max-width: 750px) {
+			.ctr-box .ctr-dot .icon{
+          width: 15px;
+          height: 15px;
+			}
+			.ctr-box .ctr-dot{
+					padding: 0 5px;
+			}
+
+	}
 </style>
 <div class="page-width position-r sadhus-slide">
 	{% if section.settings.title != blank %}
-		<div class="section-header text-center">
+		<div class="section-header text-center fw-bold">
 			<h2>{{ section.settings.title | escape }}</h2>
 		</div>
 	{% endif %}
@@ -43,17 +53,32 @@
 	{%- assign grid_item_width = 'flex5' -%}
 	{% endcase %}
 
+	{% case section.settings.grid_ph %}
+	{% when 2 %}
+	{%- assign max_height = 530 -%}
+	{%- assign grid_item_width_ph = 'flex2_ph' -%}
+	{% when 3 %}
+	{%- assign max_height = 345 -%}
+	{%- assign grid_item_width_ph = 'flex3_ph' -%}
+	{% when 4 %}
+	{%- assign max_height = 250 -%}
+	{%- assign grid_item_width_ph = 'flex4_ph' -%}
+	{% when 5 %}
+	{%- assign max_height = 195 -%}
+	{%- assign grid_item_width_ph = 'flex5_ph' -%}
+	{% endcase %}
+
 	{%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
 	<div class="ov-hidden">
 		<ul class="grid--uniform d-flex product-box transition-product item-box">
 			{% for product in collection.products limit: product_limit %}
-				<li class="{{ grid_item_width }} item">
+				<li class="{{ grid_item_width }} {{ grid_item_width_ph}} item">
 					{% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
 				</li>
 			{% else %}
 
 				{% for i in (1..product_limit) %}
-					<li class="{{ grid_item_width }} ">
+					<li class="{{ grid_item_width }} {{ grid_item_width_ph}} ">
 						<div class="grid-view-item product-card">
 							<a class="grid-view-item__link grid-view-item__image-container full-width-link" href="#">
 								<span class="visually-hidden">{{ 'homepage.onboarding.product_title' | t }}</span>
@@ -92,7 +117,7 @@
 		</span>
 	</div>
 	{% if section.settings.show_view_all %}
-		<div class="text-center top-right position-a fw-bold">
+		<div class="text-center top-right position-a fw-bold phone-hide">
 			<a href="{{ collection.url }}" class=""
 				 aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
 				{{ 'collections.general.view_all' | t }}<svg t="1639586740305" class="icon" viewBox="0 0 1024 1024" p-id="3133" width="200" height="200"><path d="M431 491L256 666 316 725l235-235L316 256 256 316l175 175z m256 0L512 666l60 60 235-235L576 256 512 316l175 175z" fill="currentColor" p-id="3134"></path></svg>
@@ -123,6 +148,15 @@
 			"type": "range",
 			"id": "grid",
 			"label": "每行产品数",
+			"min": 2,
+			"max": 5,
+			"step": 1,
+			"default": 3
+		},
+		{
+			"type": "range",
+			"id": "grid_ph",
+			"label": "移动端每行产品数",
 			"min": 2,
 			"max": 5,
 			"step": 1,
