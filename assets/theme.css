@@ -6652,7 +6652,7 @@ hr {
   display: block;
   height: 50px;
   position: absolute;
-  top: calc(100% - 50px / 2);
+  top: calc(50% - 50px / 2);
   left: calc(50% - 50px / 2); }
   @media only screen and (min-width: 750px) {
     .video-control__play-wrapper-mobile {
