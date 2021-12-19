@@ -57,7 +57,7 @@
           "announcement_img_width": 50,
           "menu_open": "hover",
           "announcement_button_t": "CLICK >",
-          "announcement_button_hidden": false,
+          "announcement_button_hidden": true,
           "show_social": true,
           "show_social_color": "#ffffff",
           "show_social_active": "#162950",
@@ -795,6 +795,7 @@
           "title": "TRENDING PRODUCTS",
           "collection": "electric-portable-space-heaters",
           "grid": 4,
+          "grid_ph": 3,
           "rows": 2,
           "show_vendor": false,
           "show_view_all": true
@@ -807,6 +808,7 @@
           "title": "NEW ARRIVALS!",
           "collection": "11",
           "grid": 4,
+          "grid_ph": 3,
           "rows": 2,
           "show_vendor": false,
           "show_view_all": true
