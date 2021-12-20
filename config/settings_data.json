@@ -304,39 +304,6 @@
           "title": ""
         }
       },
-      "1492096252560": {
-        "type": "collection-list",
-        "disabled": true,
-        "blocks": {
-          "1492096252560-0": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": ""
-            }
-          },
-          "1492096252560-1": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": ""
-            }
-          },
-          "1492096252560-2": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": ""
-            }
-          }
-        },
-        "block_order": [
-          "1492096252560-0",
-          "1492096252560-1",
-          "1492096252560-2"
-        ],
-        "settings": {
-          "title": "Collection list",
-          "grid": 3
-        }
-      },
       "blog-template": {
         "type": "blog-template",
         "settings": {
@@ -853,7 +820,6 @@
       "1492033877875",
       "16391159756d4008a5",
       "16372882298dc8beac",
-      "1492096252560",
       "1637053550bd916568",
       "16329024745a948bb0",
       "1637053565012b3f90",
