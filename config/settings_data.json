@@ -543,6 +543,7 @@
       },
       "1632902704373ccc1c": {
         "type": "video",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/1212.png",
           "image_position": "center center",
