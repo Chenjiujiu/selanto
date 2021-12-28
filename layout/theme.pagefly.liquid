@@ -111,6 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
 
+
   <style>
     {{ header_font | font_face: font_display: 'swap' }}
     {{ base_font | font_face: font_display: 'swap' }}
@@ -119,6 +120,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {{ base_font_italic | font_face: font_display: 'swap' }}
     {{ base_font_bold_italic | font_face: font_display: 'swap' }}
   </style>
+
 
   <script>
     {%- if settings.currency_code_enabled -%}
@@ -231,4 +233,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body class="template-{{ request.page_type | handle }}"><div class="pagefly-container">{{ content_for_layout }}</div></body>
+
+{%- if settings.showFlake  and request.page_type =='index' -%}
+  <script src="{{ 'xuehua.js' | asset_url }}" defer></script>
+{%- endif -%}
 </html>
