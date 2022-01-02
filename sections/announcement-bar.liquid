@@ -1,0 +1,288 @@
+{%- if section.settings.show_announcement -%}
+	<style>
+		.announcement-bar-section{
+			height: 38px;
+		}
+		.announcement-bar {
+			background: {{ section.settings.background }};
+			color: {{ section.settings.text_color }};
+		}
+		@media (max-width: 750px) {
+		}
+
+		{%- capture realsize -%}
+		{{section.blocks.size| plus: 1 -}}
+		{%- endcapture -%}
+		{%- capture propsize -%}
+		{{-100| divided_by: realsize -}}
+		{%- endcapture -%}
+		{%- capture allblock -%}
+		{{-section.blocks.size| times: 4 -}}
+		{%- endcapture -%}
+
+		.announcement-animation {
+			-webkit-animation: announcement-scroll-top {{section.settings.one_round -}}s ease-out infinite;
+			animation: announcement-scroll-top {{section.settings.one_round -}}s ease-out infinite;
+		}
+		@-webkit-keyframes announcement-scroll-top {
+			0% {transform: translateY(0%)}
+		{%- for i in (1..section.blocks.size) -%}
+		{%- capture prev -%}
+		{{- i | minus:1 -}}
+		{%- endcapture -%}
+		{{ i | times: 400 | minus: 100 |divided_by: allblock }}% { transform: translateY(-{{ propsize| times:prev }}%);}
+		{{ i | times: 400 |divided_by: allblock }}%  {  transform: translateY(-{{ propsize| times:i }}%);}
+		{%- endfor -%}
+		}
+
+		@keyframes announcement-scroll-top {
+			0% {transform: translateY(0%)}
+		{%- for i in (1..section.blocks.size) -%}
+		{%- capture prev -%}
+		{{- i | minus:1 -}}
+		{%- endcapture -%}
+		{{ i | times: 400 | minus: 100 | divided_by: allblock }}% { transform: translateY(-{{ propsize| times:prev }}%);}
+		{{ i | times: 400 | divided_by: allblock }}% { transform: translateY(-{{ propsize| times:i }}%);}
+		{%- endfor -%}
+		}
+
+		.announcement-bar {
+			position: relative;
+			display: block;
+			height: 2.7rem;
+			overflow: hidden;
+		}
+		.announcement-bar__inner {
+			overflow: hidden;
+			flex-wrap: wrap;
+		}
+		.announcement-bar__content {
+			display: inline-block;
+			padding: 4px 0;
+			margin-bottom: 0;
+			white-space: nowrap;
+			position: relative;
+			left: 0;
+			flex: 1 0 auto;
+			width: 100%;
+		}
+
+		.announcement-bar__content--center {
+			text-align: center;
+		}
+		.announcement-bar__img {
+			height: 100%;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			transform: translateX(-110%);
+		}
+		.announcement-bar__img img {
+			height: 100%;
+		}
+		@media screen and (max-width: 640px) {
+			.announcement-bar {
+				height: 2rem;
+			}
+			.announcement-bar__inner {
+				text-align: center; /* Always centered on mobile no matter the setting */
+			}
+		}
+
+		@media screen and (min-width: 641px) {
+			.announcement-bar {
+				font-size: 16px;
+				text-align: left;
+			}
+
+			.announcement-bar__inner {
+				display: flex;
+				align-items: center;
+			}
+
+			.announcement-bar__content {
+				padding: 7px 0;
+				margin-right: auto;
+			}
+
+	</style>
+
+
+	<section class="announcement-bar-section"
+					 data-section-id="{{ section.id }}"
+					 data-section-type="announcement-bar"
+					 data-section-settings='{{ section_settings }}'>
+		<div class="announcement-bar">
+			<div class="container">
+				<div class="announcement-bar__inner {% if section.blocks.size>1 %}announcement-animation{% endif %}">
+					{%- for block in section.blocks -%}
+						{%- if block.settings.link != blank -%}
+							<a href="{{ section.settings.link }}"
+								 style="background: {{ block.settings.background }};color:{{ block.settings.color }}"
+								 class="announcement-bar__content announcement-bar__content--center">
+								{% if  block.settings.announcement_img !=blank %}
+									<span class="announcement-bar__img">
+               {%- assign img_url = block.settings.announcement_img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                     <img class="lazyload js"
+													src="{{ block.settings.announcement_img| img_url: '200x50' }}"
+													data-src="{{ img_url }}"
+													data-widths="[100,150,200,250,300]"
+													data-aspectratio="{{ block.settings.announcement_img.aspect_ratio }}"
+													data-sizes="auto"
+													alt="">
+           	 			</span>
+								{% endif %}
+								{{ block.settings.text | escape }}
+								<span
+									class="announcement-bar__button  {% if  section.settings.announcement_button_hidden %}phone-hide{% endif %}">click></span>
+							</a>
+						{%- else -%}
+							<p class="announcement-bar__content announcement-bar__content--center"
+								 style="background: {{ block.settings.background }};color:{{ block.settings.color }}">
+								{% if  block.settings.announcement_img !=blank %}
+									<span class="announcement-bar__img">
+               {%- assign img_url = block.settings.announcement_img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                     <img class="lazyload js"
+													src="{{ block.settings.announcement_img| img_url: '200x50' }}"
+													data-src="{{ img_url }}"
+													data-widths="[100,150,200,250,300]"
+													data-aspectratio="{{ block.settings.announcement_img.aspect_ratio }}"
+													data-sizes="auto"
+													alt="">
+           	 			</span>
+								{% endif %}
+								{{ block.settings.text | escape }}</p>
+						{%- endif -%}
+					{%- endfor -%}
+
+					{%- if section.blocks.size>1 -%}
+						{%- for block in section.blocks reversed limit:1 -%}
+							{%- if block.settings.link != blank -%}
+								<a href="{{ section.settings.link }}"
+									 style="background: {{ block.settings.background }};color:{{ block.settings.color }}"
+									 class="announcement-bar__content announcement-bar__content--center">
+									{% if  block.settings.announcement_img !=blank %}
+										<span class="announcement-bar__img">
+               {%- assign img_url = block.settings.announcement_img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                     <img class="lazyload js"
+													src="{{ block.settings.announcement_img| img_url: '200x50' }}"
+													data-src="{{ img_url }}"
+													data-widths="[100,150,200,250,300]"
+													data-aspectratio="{{ block.settings.announcement_img.aspect_ratio }}"
+													data-sizes="auto"
+													alt="">
+           	 </span>
+									{% endif %}
+									{{ block.settings.text | escape }}
+									<span
+										class="announcement-bar__button  {% if  section.settings.announcement_button_hidden %}phone-hide{% endif %}">click></span>
+								</a>
+							{%- else -%}
+								<p class="announcement-bar__content announcement-bar__content--center"
+									 style="background: {{ block.settings.background }};color:{{ block.settings.color }}">
+									{% if  block.settings.announcement_img !=blank %}
+										<span class="announcement-bar__img">
+               {%- assign img_url = block.settings.announcement_img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                     <img class="lazyload js"
+													src="{{ block.settings.announcement_img| img_url: '200x50' }}"
+													data-src="{{ img_url }}"
+													data-widths="[100,150,200,250,300]"
+													data-aspectratio="{{ block.settings.announcement_img.aspect_ratio }}"
+													data-sizes="auto"
+													alt="">
+           	 			</span>
+									{% endif %}
+									{{ block.settings.text | escape }}</p>
+							{%- endif -%}
+						{%- endfor -%}
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script>
+		{%- if section.settings.show_newsletter -%}
+    document.documentElement.style.setProperty('--announcement-bar-button-width', document.querySelector('.announcement-bar__button').clientWidth + 'px');
+		{%- else -%}
+    document.documentElement.style.removeProperty('--announcement-bar-button-width');
+		{%- endif -%}
+    document.documentElement.style.setProperty('--announcement-bar-height', document.getElementById('shopify-section-{{ section.id }}').clientHeight + 'px');
+	</script>
+{%- endif -%}
+
+{% schema %}
+{
+	"name": "公告栏",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "show_announcement",
+			"label": "显示公告",
+			"default": true
+		},
+		{
+			"type": "number",
+			"id": "one_round",
+			"label": "滚一轮的时间,单位S",
+			"default": 10
+		},
+		{
+			"type": "checkbox",
+			"id": "announcement_button_hidden",
+			"label": "移动端隐藏click按钮",
+			"default": true
+		}
+	],
+	"blocks": [
+		{
+			"type": "announcement",
+			"name": "公告栏",
+			"settings": [
+				{
+					"type": "text",
+					"id": "text",
+					"default": "Welcome to our store",
+					"label": "文本"
+				},
+				{
+					"type": "url",
+					"id": "link",
+					"label": "链接"
+				},
+				{
+					"type": "color",
+					"id": "background",
+					"label": "背景颜色",
+					"default": "#000000"
+				},
+				{
+					"type": "color",
+					"id": "color",
+					"label": "文本颜色",
+					"default": "#ffffff"
+				},
+				{
+					"type": "image_picker",
+					"id": "announcement_img",
+					"label": "公告栏图片"
+				},
+				{
+
+					"type": "range",
+					"id": "announcement_img_width",
+					"min": 50,
+					"max": 180,
+					"step": 2,
+					"default": 50,
+					"unit": "px",
+					"label": "公告栏图片宽度",
+					"info": "图片建议长高易比例2：1"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

@@ -4295,6 +4295,10 @@ theme.Slideshow = (function() {
   return Slideshow;
 })();
 
+
+
+
+
 theme.Video = (function() {
   var autoplayCheckComplete = false;
   var playOnClickChecked = false;
@@ -4474,7 +4478,7 @@ theme.Video = (function() {
     playOnClickChecked = true;
   }
 
-  // The API will call this function when each video player is ready
+  // he API will call this function when each video player is readyT
   function onPlayerReady(evt) {
     evt.target.setPlaybackQuality('hd1080');
     var videoData = getVideoOptions(evt);
@@ -4961,6 +4965,12 @@ theme.Video = (function() {
     removeEvents: removeEvents
   };
 })();
+
+
+
+
+
+
 
 theme.ProductVideo = (function() {
   var videos = {};
