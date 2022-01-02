@@ -54,10 +54,7 @@
         "type": "header",
         "settings": {
           "fixed": true,
-          "announcement_img_width": 50,
           "menu_open": "hover",
-          "announcement_button_t": "CLICK >",
-          "announcement_button_hidden": true,
           "show_social": true,
           "show_social_color": "#ffffff",
           "show_social_active": "#162950",
@@ -798,6 +795,29 @@
           "height": "small",
           "video_title": "",
           "text_size": "medium"
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "f9d90b17-7abc-40b2-8f97-81980a26225d": {
+            "type": "announcement",
+            "settings": {
+              "text": "HOLIDAY SALE - 30% OFF with Code: SELANTO30",
+              "link": "shopify:\/\/collections\/electric-room-heaters",
+              "background": "#2a2c2c",
+              "color": "#ffffff",
+              "announcement_img_width": 50
+            }
+          }
+        },
+        "block_order": [
+          "f9d90b17-7abc-40b2-8f97-81980a26225d"
+        ],
+        "settings": {
+          "show_announcement": true,
+          "one_round": 10,
+          "announcement_button_hidden": true
         }
       }
     },
