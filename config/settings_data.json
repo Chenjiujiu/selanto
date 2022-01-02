@@ -72,7 +72,7 @@
           "logo": "shopify:\/\/shop_images\/00000000.png",
           "logo_max_width": 250,
           "main_linklist": "main-menu",
-          "message": true,
+          "message": false,
           "home_page_only": false,
           "message_text": "HOLIDAY SALE - 30% OFF with Code: SELANTO30",
           "message_link": "shopify:\/\/collections\/electric-room-heaters",
