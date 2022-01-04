@@ -809,10 +809,22 @@
               "color": "#ffffff",
               "announcement_img_width": 50
             }
+          },
+          "34c8af2d-634e-470f-a6c8-b3933779dc04": {
+            "type": "announcement",
+            "settings": {
+              "text": "FREE SHIPPING ON ALL ORDERS",
+              "link": "shopify:\/\/collections\/electric-ceramic-tower-heaters",
+              "background": "#000000",
+              "color": "#ffffff",
+              "announcement_img": "shopify:\/\/shop_images\/d53dbccbfe92e9149a0d4c187e2306fb.png",
+              "announcement_img_width": 50
+            }
           }
         },
         "block_order": [
-          "f9d90b17-7abc-40b2-8f97-81980a26225d"
+          "f9d90b17-7abc-40b2-8f97-81980a26225d",
+          "34c8af2d-634e-470f-a6c8-b3933779dc04"
         ],
         "settings": {
           "show_announcement": true,
