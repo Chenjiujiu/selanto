@@ -731,6 +731,7 @@
       },
       "1639104491c7f82cdd": {
         "type": "collection",
+        "disabled": true,
         "settings": {
           "title": "NEW ARRIVALS!",
           "collection": "11",
